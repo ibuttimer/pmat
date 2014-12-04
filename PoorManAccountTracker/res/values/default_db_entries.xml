@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_types">
+        <item >name=Cash</item>
+        <item >name=Current;overdraft=yes</item>
+        <item >name=Creditcard;credit=yes</item>
+        <item >name=Savings</item>
+    </string-array>
+    <string-array name="transfers">
+        <item >Instant</item>
+    </string-array>
+    <string-array name="banks">
+<!-- Note: only 1 entry may have the default key -->
+        <item >name=Non-bank;default=yes</item>
+<!-- Irish banks -->
+        <item >name=Allied Irish Bank;locale=en_IE;phone=0818 724 724;phoneaway=+353 1 771 2424;text=50131;cslocal=0818 724 724;csaway=+353 1 771 2424</item>
+        <item >name=Bank of Ireland;locale=en_IE;phone=0818 365 365;phoneaway=+353 1 404 4000;cslocal=0818 365 365;csaway=+353 1 404 4000</item>
+        <item >name=permanenttsb;locale=en_IE;phone=1890 500 121;phoneaway=+353 1 212 4101;text=51309;cslocal=1890 500 121;csaway=+353 1 212 4101</item>
+        <item >name=Ulster Bank;locale=en_IE;phone=1850 424 365;phoneaway=+353 1 804 7475;cslocal=1850 424 365;csaway=+353 1 804 7475</item>
+        <item >name=KBC Bank;locale=en_IE;phone=1800 93 92 44;phoneaway=+353 1 664 6100;cslocal=1800 93 92 44;csaway=+353 1 664 6100</item>
+        <item >name=RaboDirect;locale=en_IE;phone=1850 88 22 44;phoneaway=+353 1 659 9731;cslocal=1850 88 22 44;csaway=+353 1 659 9731</item>
+<!-- US banks -->
+<!--         <item >name=Chase;locale=en_US;phone=1 877 242 7372;phoneaway=+1 713 262 3300;cslocal=1 877 242 7372;csaway=+1 713 262 3300</item> -->
+<!--         <item >name=Bank of America;locale=en_US;phone=1 800 432 1000;phoneaway=+1 315 724 4022;cslocal=1 800 432 1000;csaway=+1 315 724 4022</item> -->
+<!--         <item >name=Wells Fargo;locale=en_US;phone=1 800 869 3557;phoneaway=+800 86935577;cslocal=1 800 869 3557;csaway=+800 86935577</item> -->
+<!--         <item >name=Citigroup;locale=en_US;phone=1 800 374 9700;cslocal=1 800 374 9700</item> -->
+<!-- UK banks -->
+<!--         <item >name=HSBC;locale=en_GB;phone=08457 404 404;phoneaway=+44 1226 261 010;cslocal=08457 404 404;csaway=+44 1226 261 010</item> -->
+<!--         <item >name=Lloyds Bank;locale=en_GB;phone=0845 300 0000;phoneaway=+44 1226 261 010;cslocal=0845 300 0000;csaway=+44 1226 261 010</item> -->
+    </string-array>
+    <string-array name="text_bank_trans_types">
+        <item >Balance query</item>
+        <item >Mini statement</item>
+        <item >Transfer</item>
+        <item >Pay a bill</item>
+        <item >Mobile phone topup</item>
+        <item >Emergency cash</item>
+    </string-array>
+    <string-array name="category_types">
+<!-- Special case items are preceeded by special marker "#sysXXX" -->
+        <item >#sysUnassigned.Unassigned</item>
+        <item >#sysTransfer.Transfer</item>
+        <item >#sysIncome.Income</item>
+        <item >#sysExpense.Expense</item>
+        <item >#sysImbalance.Imbalance</item>
+        <item >#sysSplit.Split</item>
+<!-- Normal items -->
+        <item >Income.Salary</item>
+        <item >Income.Interest Earned</item>
+        <item >Income.Investment Income</item>
+        <item >Income.Other Income</item>
+        <item >Income.Gift</item>
+        <item >Expense.Food.Groceries</item>
+        <item >Expense.Food.Dining Out</item>
+        <item >Expense.Utilities.Electricity</item>
+        <item >Expense.Utilities.Gas</item>
+        <item >Expense.Utilities.Waste Charges</item>
+        <item >Expense.Utilities.Water</item>
+        <item >Expense.Utilities.Cable</item>
+        <item >Expense.Utilities.Telephone</item>
+        <item >Expense.Utilities.Internet</item>
+        <item >Expense.Utilities.Television</item>
+        <item >Expense.Bank.Service Charges</item>
+        <item >Expense.Taxes.Income Tax</item>
+        <item >Expense.Taxes.Stamp Duty</item>
+        <item >Expense.Taxes.Other Tax</item>
+        <item >Expense.Car.Fuel</item>
+        <item >Expense.Car.Maintenance</item>
+        <item >Expense.Car.Tax</item>
+        <item >Expense.Car.Parking</item>
+        <item >Expense.Gift</item>
+        <item >Expense.Miscellaneous</item>
+        <item >Expense.House.Maintenance</item>
+        <item >Expense.House.Cleaning</item>
+        <item >Expense.House.Furniture</item>
+        <item >Expense.Entertainment.Dining Out</item>
+        <item >Expense.Entertainment.Cinema</item>
+        <item >Expense.Entertainment.Rentals</item>
+        <item >Expense.Entertainment.Day out</item>
+        <item >Expense.Entertainment.Reading Material</item>
+        <item >Expense.Holiday.Transport.Air</item>
+        <item >Expense.Holiday.Transport.Rail</item>
+        <item >Expense.Holiday.Transport.Sea</item>
+        <item >Expense.Holiday.Transport.Car.Rental</item>
+        <item >Expense.Holiday.Transport.Car.Fuel</item>
+        <item >Expense.Holiday.Transport.Taxi</item>
+        <item >Expense.Holiday.Accommodation</item>
+        <item >Expense.Holiday.Activity</item>
+        <item >Expense.Holiday.Food.Groceries</item>
+        <item >Expense.Holiday.Food.Dining out</item>
+        <item >Expense.Holiday.Souvenir</item>
+        <item >Expense.Transport.Air</item>
+        <item >Expense.Transport.Rail</item>
+        <item >Expense.Transport.Sea</item>
+        <item >Expense.Transport.Car.Toll</item>
+        <item >Expense.Transport.Car.Parking</item>
+        <item >Expense.Transport.Taxi</item>
+        <item >Expense.Pet.Food</item>
+        <item >Expense.Pet.Accommodation</item>
+        <item >Expense.Pet.Veterinary</item>
+        <item >Expense.Sport.Fees</item>
+        <item >Expense.Sport.Equipment</item>
+        <item >Expense.Clothing.Shoes</item>
+        <item >Expense.Clothing.Repair</item>
+        <item >Expense.Medical.Doctor</item>
+        <item >Expense.Medical.Hospital</item>
+        <item >Expense.Medical.Pharmacy</item>
+    </string-array>
+    <string-array name="test_accounts">
+<!-- Note: value of 'type' key must exactly match an entry from 'account_types' string-array -->
+<!-- Note: value of 'currency' key must exactly match a currency code from the locale's available on the device -->
+<!-- Note: value of 'bank' key must exactly match a bank name from the 'banks' string-array -->
+<!-- Note: value of 'date' key must be in the format "yyyy.MM.dd" or "yyyy.MM.dd HH:mm:ss" -->
+        <item >name=Cash;nickname=cash;type=Cash;currency=EUR</item>
+        <item >name=Current;nickname=curr;type=Current;currency=EUR;init=0.5;current=20;limit=1000;bank=permanenttsb;date=2012.01.05</item>
+        <item >name=Savings;nickname=save;type=Savings;currency=USD;current=100;bank=Allied Irish Bank;date=2012.02.09</item>
+        <item >name=Creditcard;nickname=cc;type=Creditcard;currency=EUR;current=1234.56;limit=4000;bank=permanenttsb;date=2013.12.13</item>
+	</string-array>
+
+</resources>

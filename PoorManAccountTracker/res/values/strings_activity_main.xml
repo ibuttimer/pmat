@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_account_name_header">Account Name</string>
+    <string name="main_account_bal_header">Available Balance</string>
+    
+</resources>

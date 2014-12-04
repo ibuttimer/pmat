@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_add_bank">Add Bank</string>
+    <string name="title_activity_edit_bank">Edit Bank</string>
+    <string name="add_bank_name">Name:</string>
+    <string name="add_bank_name_hint">Enter name</string>
+    <string name="add_bank_address">Address:</string>
+    <string name="add_bank_address_hint">Enter address</string>
+    <string name="add_bank_country">Country:</string>
+    <string name="add_bank_country_hint">Enter country</string>
+    <string name="add_bank_local_service">Customer Service number:</string>
+    <string name="add_bank_local_service_hint">Enter number or select from Contacts</string>
+    <string name="add_bank_away_service">Abroad Customer Service number:</string>
+    <string name="add_bank_away_service_hint">Enter number or select from Contacts</string>
+    <string name="add_bank_phone_bank">Telephone Banking number:</string>
+    <string name="add_bank_phone_bank_hint">Enter number or select from Contacts</string>
+    <string name="add_bank_text_bank">Text Banking number:</string>
+    <string name="add_bank_text_bank_hint">Enter number or select from Contacts</string>
+    <string name="add_bank_contacts">Contacts</string>
+    <string name="add_bank_contacts_hint">Select from Contacts</string>
+    <string name="add_bank_undefined">Undefined</string>
+    <string name="add_bank_add_new">Add new</string>
+    <string name="add_bank_no_templates">No SMS templates defined</string>
+    <string name="add_bank_templates">SMS templates</string>
+    <string name="add_bank_templateEditDelete">Edit or delete SMS template?</string>
+    <string name="add_bank_templateEdit">Edit</string>
+    <string name="add_bank_templateDelete">Delete</string>
+    
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/ie.ibuttimer.pmat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddAccountActivity" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/addAccount_textViewName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/addaccount_account_name" />
+
+	        <EditText
+	            android:id="@+id/addAccount_editTextName"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/addaccount_account_name_hint"
+	            android:inputType="text" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutNickname"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutName"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+
+	    	<TextView
+		        android:id="@+id/addAccount_textViewNickname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_nickname" />
+	
+		    <EditText
+		        android:id="@+id/addAccount_editTextNickname"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/addaccount_account_nickname_hint"
+		        android:inputType="text" >
+		    </EditText>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutType"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutNickname"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+		    <TextView
+		        android:id="@+id/addAccount_textViewType"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_type" />
+	
+		    <Spinner
+		        android:id="@+id/addAccount_spinnerType"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutCurrency"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutType"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+		    <TextView
+		        android:id="@+id/addAccount_textViewCurrency"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_currency" />
+	
+		    <Spinner
+		        android:id="@+id/addAccount_spinnerCurrency"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	    </LinearLayout>
+		    
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutBank"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutCurrency"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+	   	    <TextView
+		        android:id="@+id/addAccount_textViewBank"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_bank" />
+	
+		    <Spinner
+		        android:id="@+id/addAccount_spinnerBank"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	    </LinearLayout>
+
+	    <RelativeLayout
+	        android:id="@+id/addAccount_layoutDate"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:clickable="true"
+	        android:layout_below="@+id/addAccount_layoutBank"
+	        android:background="@drawable/layout_background"
+	        android:orientation="horizontal" >
+
+	        <ie.ibuttimer.widget.AppImageButton
+	            android:id="@+id/addAccount_buttonDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:contentDescription="@string/addaccount_set_date"
+	            android:src="@android:drawable/ic_menu_today" />
+
+	        <TextView
+	            android:id="@+id/addAccount_textViewDate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_centerHorizontal="true"
+	            android:clickable="true"
+	            android:text="@string/addaccount_open_date_not_set" />
+	    </RelativeLayout>
+
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutInitBal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutDate"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+		    <TextView
+		        android:id="@+id/addAccount_textViewInitialBal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_initial_bal" />
+	
+		    <ie.ibuttimer.widget.AmountEditText
+		        android:id="@+id/addAccount_editTextInitialBal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/addaccount_account_initial_bal_hint"
+		        android:inputType="number|numberSigned|numberDecimal"
+		        android:minEms="@integer/amount_ems"
+		        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutCredit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutInitBal"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+		    <TextView
+		        android:id="@+id/addAccount_textViewCreditLimit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_credit_limit" />
+	
+		    <ie.ibuttimer.widget.AmountEditText
+		        android:id="@+id/addAccount_editTextCreditLimit"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/addaccount_account_credit_limit_hint"
+		        android:inputType="number|numberSigned|numberDecimal"
+		        android:minEms="@integer/amount_ems"
+		        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/addAccount_layoutOverdraft"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutCredit"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	    
+		    <TextView
+		        android:id="@+id/addAccount_textViewOverdraftLimit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/addaccount_account_overdraft_limit" />
+
+		    <ie.ibuttimer.widget.AmountEditText
+		        android:id="@+id/addAccount_editTextOverdraftLimit"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/addaccount_account_overdraft_limit_hint"
+		        android:inputType="number|numberSigned|numberDecimal"
+		        android:minEms="@integer/amount_ems"
+		        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+	    </LinearLayout>
+
+    	<LinearLayout
+	    	android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/addAccount_layoutOverdraft" >
+	
+		    <ie.ibuttimer.widget.AppButton
+		        android:id="@+id/addAccount_buttonCancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@android:string/cancel" />
+	
+		    <ie.ibuttimer.widget.AppButton
+		        android:id="@+id/addAccount_buttonSave"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@android:string/ok" />
+	    </LinearLayout>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateSmsTemplateActivity" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+    
+	    <LinearLayout
+	        android:id="@+id/createSmsTemplate_layoutName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/createSmsTemplate_textViewName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/createSmsTemplate_templateName" />
+	
+	        <EditText
+	            android:id="@+id/createSmsTemplate_editTextName"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+		    	android:minEms="10"
+	            android:inputType="text"
+	            android:hint="@string/createSmsTemplate_templateNameHint" />
+	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/createSmsTemplate_layoutType"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical"
+	        android:layout_below="@+id/createSmsTemplate_layoutName" >
+
+		    <Spinner
+		        android:id="@+id/createSmsTemplate_spinnerSmsType"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	    </LinearLayout>
+		    	    
+	    <LinearLayout
+	        android:id="@+id/createSmsTemplate_layoutBank"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/layout_background"
+	        android:orientation="vertical"
+	        android:layout_below="@+id/createSmsTemplate_layoutType" >
+	
+		    <Spinner
+		        android:id="@+id/createSmsTemplate_spinnerBank"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	
+	        <TextView
+	            android:id="@+id/createSmsTemplate_textViewBank"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/createSmsTemplate_bank" />
+	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/createSmsTemplate_layoutExample"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_below="@+id/createSmsTemplate_layoutBank" >
+
+	        <TextView
+	            android:id="@+id/createSmsTemplate_textViewEgTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/createSmsTemplate_example" />
+	
+	        <TextView
+	            android:id="@+id/createSmsTemplate_textViewExample"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/createSmsTemplate_example_na" />
+	    </LinearLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/createSmsTemplate_layoutHeader"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/layout_background"
+            android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/createSmsTemplate_layoutExample" >
+
+	        <TextView
+	            android:id="@+id/createSmsTemplate_textViewFields"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/createSmsTemplateButtonAdd"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:gravity="bottom|left"
+	            android:text="@string/createSmsTemplate_templateFields" />
+	
+	        <ImageButton
+	            android:id="@+id/createSmsTemplateButtonAdd"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:onClick="addNewField"
+	            android:src="@android:drawable/ic_input_add" />
+	
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/createSmsTemplate_buttonClear"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_toLeftOf="@+id/createSmsTemplateButtonAdd"
+	            android:onClick="clearAllFields"
+	            android:text="@string/button_clear" />
+
+	    </RelativeLayout>
+
+	    <LinearLayout
+	        android:id="@+id/createSmsTemplate_layoutFields"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+	        android:background="@drawable/layout_background"
+	    	android:layout_below="@+id/createSmsTemplate_layoutHeader"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/createSmsTemplate_layoutFields"
+	        android:orientation="horizontal" >
+	
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/createSmsTemplate_buttonCancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@android:string/cancel" />
+	
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/createSmsTemplate_buttonSave"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@android:string/ok" />
+	    </LinearLayout>
+    </RelativeLayout>
+    
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_create_sms_template">Add SMS Template</string>
+    <string name="title_activity_edit_sms_template">Edit SMS Template</string>
+    <string name="createSmsTemplate_templateFields">Template Fields:</string>
+    <string name="createSmsTemplate_addNew">Add New</string>
+    <string name="createSmsTemplate_moveUp">Move up</string>
+    <string name="createSmsTemplate_moveDown">Move down</string>
+    <string name="createSmsTemplate_fixedTextHint">Enter text</string>
+    <string name="createSmsTemplate_remove">Remove</string>
+    <string name="createSmsTemplate_example">Example:</string>
+    <string name="createSmsTemplate_example_na">N/A</string>
+    <string name="createSmsTemplate_example_account">account</string>
+    <string name="createSmsTemplate_templateName">Template Name:</string>
+    <string name="createSmsTemplate_templateNameHint">Enter name</string>
+    <string name="createSmsTemplate_templateSelectType">Select type</string>
+    <string name="createSmsTemplate_templateSelectBank">Select bank</string>
+    <string name="createSmsTemplate_bank">Bank: </string>
+    
+</resources>

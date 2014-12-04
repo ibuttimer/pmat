@@ -1,0 +1,382 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddTransactionActivity" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <RadioGroup
+	            android:id="@+id/addTransaction_radioGroupType"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/layout_background"
+	            android:layout_centerHorizontal="true"
+	            android:orientation="horizontal" >
+	
+	<!--             No default checked item set in layout as it done in AddTransactionActivity -->
+	
+	            <RadioButton
+	                android:id="@+id/addTransaction_radioCredit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:onClick="onRadioButtonClicked"
+	                android:text="@string/addtransaction_credit" />
+
+	            <RadioButton
+	                android:id="@+id/addTransaction_radioDebit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:onClick="onRadioButtonClicked"
+	                android:text="@string/addtransaction_debit" />
+	
+	            <RadioButton
+	                android:id="@+id/addTransaction_radioTransfer"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="left|center_vertical"
+	                android:onClick="onRadioButtonClicked"
+	                android:text="@string/addtransaction_transfer" />
+	        </RadioGroup>
+	
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutAmount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/layout_background"
+	            android:layout_below="@+id/addTransaction_radioGroupType"
+	            android:orientation="horizontal" >
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewAmount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:text="@string/addtransaction_amount" />
+
+		        <ie.ibuttimer.widget.AppImageButton
+		            android:id="@+id/addTransaction_buttonUpdateAmount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:contentDescription="@string/addtransaction_update_amount"
+		            android:src="@android:drawable/ic_menu_manage" />
+		        	
+		        <ie.ibuttimer.widget.AmountEditText
+		            android:id="@+id/addTransaction_editTextAmount"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:minEms="@integer/amount_ems"
+		            android:hint="@string/addtransaction_amount_hint"
+		            android:inputType="number|numberSigned|numberDecimal"
+		            android:layout_toRightOf="@+id/addTransaction_textViewAmount"
+		            android:layout_toLeftOf="@+id/addTransaction_buttonUpdateAmount"
+		            android:scrollHorizontally="true" />
+		        
+	        </RelativeLayout>
+	
+	        <LinearLayout
+	            android:id="@+id/addTransaction_layoutRate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/layout_background"
+	            android:layout_below="@+id/addTransaction_layoutAmount"
+	            android:orientation="horizontal" >
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewRate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/addtransaction_rate" />
+		    
+		        <EditText
+		            android:id="@+id/addTransaction_editTextRate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:ems="10"
+		            android:hint="@string/addtransaction_rate_hint"
+		            android:inputType="numberDecimal"
+		            android:scrollHorizontally="true" />
+	
+	        </LinearLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutAccount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/layout_background"
+	            android:layout_below="@+id/addTransaction_layoutRate"
+	            android:orientation="horizontal" >
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewAccount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:text="@string/addtransaction_account" />
+		        
+	            <Spinner
+		            android:id="@+id/addTransaction_spinnerAccount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/addTransaction_textViewAccount" />
+	
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutToAccount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/layout_background"
+	            android:layout_below="@+id/addTransaction_layoutAccount"
+	            android:orientation="horizontal" >
+	        
+		        <TextView
+		            android:id="@+id/addTransaction_textViewToAccount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:text="@string/addtransaction_to_account" />
+		
+		        <Spinner
+		            android:id="@+id/addTransaction_spinnerToAccount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@+id/addTransaction_textViewToAccount" />
+	
+	        </RelativeLayout>
+		        
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutPayee"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:layout_below="@+id/addTransaction_layoutToAccount"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+		        <ie.ibuttimer.widget.AppImageButton
+		            android:id="@+id/addTransaction_buttonSetPayee"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:contentDescription="@string/addtransaction_select_payee"
+		            android:src="@drawable/ic_menu_friendslist" />
+	
+	<!--             @android:drawable/ic_menu_friendslist 'resource is not public' error, copied to project from sdk -->
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewPayee"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:clickable="true"
+		            android:text="@string/addtransaction_select_payee"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+		    </RelativeLayout>
+		        
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutCategoryMain"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/addTransaction_layoutPayee"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+		        <RelativeLayout
+		            android:id="@+id/addTransaction_layoutCategoryHeader"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+	            	android:clickable="true"
+		            android:orientation="horizontal" >
+		
+			        <ie.ibuttimer.widget.AppImageButton
+			            android:id="@+id/addTransaction_buttonSetCategory"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:contentDescription="@string/addtransaction_categories"
+			            android:src="@android:drawable/ic_menu_sort_by_size" />
+			        
+			        <TextView
+			            android:id="@+id/addTransaction_category_heading"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:clickable="true"
+			            android:text="@string/addtransaction_select_categories"
+			            android:textAppearance="?android:attr/textAppearanceSmall" />
+			        	        	        
+		        </RelativeLayout>
+	
+		        <LinearLayout
+		            android:id="@+id/addTransaction_layoutCategory"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@+id/addTransaction_layoutCategoryHeader"
+	                android:layout_alignParentLeft="true"
+		            android:orientation="vertical" >
+		<!-- 	        this is populated in the code once categories are selected -->
+		        </LinearLayout>
+	
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutSendDateTime"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/addTransaction_layoutCategoryMain"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+	            <ie.ibuttimer.widget.AppImageButton
+	                android:id="@+id/addTransaction_buttonDate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:contentDescription="@string/addtransaction_set_date"
+	                android:src="@android:drawable/ic_menu_today" />
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewDate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:clickable="true"
+		            android:text="@string/addtransaction_transfer_end_date_not_set" />
+	            
+	            <ie.ibuttimer.widget.AppImageButton
+	                android:id="@+id/addTransaction_buttonTime"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:contentDescription="@string/addtransaction_set_time"
+	                android:src="@android:drawable/ic_menu_recent_history" />
+	            
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/addTransaction_layoutRecvDateTime"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/addTransaction_layoutSendDateTime"
+            	android:clickable="true"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+	            <ie.ibuttimer.widget.AppImageButton
+	                android:id="@+id/addTransaction_buttonTransfer"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:text="@string/addtransaction_transfer_type"
+	                android:src="@android:drawable/ic_menu_set_as" />
+	            
+		        <TextView
+		            android:id="@+id/addTransaction_textViewTransfer"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:clickable="true"
+		            android:text="@string/addtransaction_transfer_end_date_not_set" />
+	            
+	        </RelativeLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/addTransaction_layoutRef"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/addTransaction_layoutRecvDateTime"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewRef"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/addtransaction_reference" />
+	            
+		        <EditText
+		            android:id="@+id/addTransaction_editTextRef"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="@string/addtransaction_reference_hint"
+		            android:inputType="text" />
+		        
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/addTransaction_layoutNote"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/addTransaction_layoutRef"
+	            android:background="@drawable/layout_background"
+	            android:orientation="horizontal" >
+	
+		        <TextView
+		            android:id="@+id/addTransaction_textViewNote"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/addtransaction_note" />
+	            
+		        <EditText
+		            android:id="@+id/addTransaction_editTextNote"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="@string/addtransaction_note_hint"
+		            android:inputType="textMultiLine" />
+		        
+	        </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+    	android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ie.ibuttimer.widget.AppButton
+            android:id="@+id/addTransaction_buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel" />
+
+        <ie.ibuttimer.widget.AppButton
+            android:id="@+id/addTransaction_buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok" />
+
+        <ie.ibuttimer.widget.AppButton
+            android:id="@+id/addTransaction_buttonSaveAndNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save_and_new" />
+
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SMS keywords -->
+    <string name="simple_sms_marker">PMAT:</string>
+    <string name="key_value_sms_marker">PMAT/</string>
+    
+    <string name="sms_credit_command">get</string>
+    <string name="sms_debit_command">pay</string>
+    <string name="sms_transfer_command">transfer</string>
+    <string name="sms_to_command">to</string>
+    <string name="sms_from_command">from</string>
+    <string name="sms_as_command">as</string>
+    
+    <string name="sms_credit_report">Got ?{amount} from ?{payee} to ?{destination}.</string>
+    <string name="sms_debit_report">Paid ?{amount} from ?{source} to ?{payee}.</string>
+    <string name="sms_transfer_report">Transferred ?{amount} from ?{source} to ?{destination} as ?{payee}.</string>
+    <string name="sms_trans_update_head">Transaction update;</string>
+    <string name="sms_trans_update_link">changed to</string>
+    <string name="sms_trans_remove_head">Transaction deleted; </string>
+    
+    <string name="sms_bal_command">bal</string>
+    <string name="sms_balance_command">balance</string>
+    <string name="sms_balance_report">Current available balance for ?{account} is ?{amount}.</string>
+    <string name="sms_balance_snap_head">Current available balances are</string>
+    <string name="sms_balance_snap_item">, ?{account} ?{amount}</string>
+    
+    
+    
+</resources>

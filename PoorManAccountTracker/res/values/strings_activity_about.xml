@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_version">Version </string>
+    <string name="about_developer">Ian Buttimer</string>
+    <string name="about_copyright">&#169;</string>
+    <string name="about_price">This application is provided free of charge on an \"as is\" basis without any representation or endorsement being made and 
+without warranty of any kind, including but not limited to the implied warranties of satisfactory quality, fitness for a particular purpose, non-infringement, compatibility, security and accuracy.</string>
+    <string name="about_credits">Credits:</string>
+    <string-array name="about_credit_list">
+        <item >Sounds courtesy of http://www.freesfx.co.uk.</item>
+        <item >Icon images courtesy of Microsoft. http://www.microsoft.com/en-us/legal/intellectualproperty/Permissions/default.aspx#Clip Art and Sample Art</item>
+    </string-array>
+
+</resources>

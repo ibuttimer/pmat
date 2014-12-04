@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_add_transaction">Add Transaction</string>
+    <string name="title_activity_edit_transaction">Edit Transaction</string>
+    <string name="addtransaction_amount">Amount:</string>
+    <string name="addtransaction_amount_hint">Enter amount</string>
+    <string name="addtransaction_rate">Conversion rate:</string>
+    <string name="addtransaction_rate_hint">Enter conversion rate</string>
+    <string name="addtransaction_account">Account:</string>
+    <string name="addtransaction_to_account">To Account:</string>
+    <string name="addtransaction_from_account">From Account:</string>
+    <string name="addtransaction_category">Category</string>
+    <string name="addtransaction_categories">Categories</string>
+    <string name="addtransaction_select_categories">Select Categories</string>
+    <string name="addtransaction_update_amount">Update amount</string>
+    <string name="addtransaction_credit">Credit</string>
+    <string name="addtransaction_debit">Debit</string>
+    <string name="addtransaction_transfer">Transfer</string>
+    <string name="addtransaction_category_amount_hint">Enter amount</string>
+    <string name="addtransaction_recv_date">Receive</string>
+    <string name="addtransaction_set_date">Set Date:</string>
+    <string name="addtransaction_date">Date</string>
+    <string name="addtransaction_set_time">Set Time:</string>
+    <string name="addtransaction_time">Time</string>
+    <string name="addtransaction_select_payee_hint">Enter new payee or filter existing</string>
+    <string name="addtransaction_select_or_add_payee">Add new payee or select from list.</string>
+    <string name="addtransaction_payee">Payee</string>
+    <string name="addtransaction_select_payee">Select payee</string>
+    <string name="addtransaction_select_payer">Select payer</string>
+    <string name="addtransaction_add_new_payee">Add new payee</string>
+    <string name="addtransaction_transfer_type">Transfer type</string>
+    <string name="addtransaction_select_transfer_type">Select transfer type:</string>
+    <string name="addtransaction_transfer_start_date">Start date:</string>
+    <string name="addtransaction_transfer_end_date">Complete date:</string>
+    <string name="addtransaction_transfer_end_date_not_set">Transfer type not set</string>
+    <string name="addtransaction_configured_transfers">Configured transfer types:</string>
+    <string name="addtransaction_reference">Reference:</string>
+    <string name="addtransaction_reference_hint">Enter reference</string>
+    <string name="addtransaction_note">Note:</string>
+    <string name="addtransaction_note_hint">Enter note</string>
+    
+</resources>

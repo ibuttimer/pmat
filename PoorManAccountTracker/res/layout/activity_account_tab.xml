@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accountActivity_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AccountActivity" >
+
+    <TableLayout
+        android:id="@+id/accountActivity_tableInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/addBank_tableRowNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_name" />
+
+            <TextView
+                android:id="@+id/accountActivity_textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewDefaultText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/addBank_tableRowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewNicknameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_nickname" />
+
+            <TextView
+                android:id="@+id/accountActivity_textViewNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewDefaultText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/addBank_tableRowPhoneHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewCurrentBalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_current_bal" />
+
+            <TextView
+                android:id="@+id/accountActivity_textViewCurrentBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewDefaultText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/addBank_tableRowPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewAvailableBalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_available_bal" />
+
+            <TextView
+                android:id="@+id/accountActivity_textViewAvailableBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewDefaultText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/accountActivity_tableRowTransactionsFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewTransactionsFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_transactions_from" />
+
+            <Spinner
+                android:id="@+id/accountActivity_spinnerFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/accountActivity_tableRowSortBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewSortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_sort_by" />
+
+            <Spinner
+                android:id="@+id/accountActivity_spinnerSortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/accountActivity_tableRowNoTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/accountActivity_textViewNoTransactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_no_transactions" />
+        </TableRow>
+    </TableLayout>
+
+    <ExpandableListView
+        android:id="@+id/accountActivity_expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ExpandableListView>
+
+    
+
+</LinearLayout>

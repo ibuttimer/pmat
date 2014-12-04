@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="snapshot_widget_label">Account Snapshot</string>
+    <string name="snapshot_widget_no_accounts">No accounts configured</string>
+    
+</resources>

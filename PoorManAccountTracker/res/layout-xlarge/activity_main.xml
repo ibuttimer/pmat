@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/ie.ibuttimer.pmat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/main_textViewAccountSnapshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/account_snapshot" />
+
+	<ImageView
+	    android:id="@+id/main_imageView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:contentDescription="Juggling man"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true" />
+	
+    <TextView
+        android:id="@+id/main_textViewNoAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_below="@id/main_imageView"
+        android:layout_alignParentLeft="true"
+        android:text="@string/account_snapshot_none" />
+	
+    <ie.ibuttimer.widget.AccountBalanceView
+        android:id="@+id/main_accountBalanceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_textViewAccountSnapshot"
+        custom:accountBalance="@string/main_account_bal_header"
+        custom:accountName="@string/main_account_name_header" />
+
+
+	<TableLayout
+	    android:id="@+id/main_tableButtons"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true" >
+	
+	    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/main_buttonAddTransaction"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@android:drawable/ic_menu_set_as"
+	            android:text="@string/title_activity_add_transaction"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/main_buttonAddAccount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/ic_menu_account_list"
+	            android:text="@string/title_activity_add_account"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	<!-- @android:drawable/ic_menu_account_list 'resource is not public' error, copied to project from sdk -->
+
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/main_buttonAddBank"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/ic_menu_home"
+	            android:text="@string/title_activity_add_bank"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<!-- @android:drawable/ic_menu_home 'resource is not public' error, copied to project from sdk -->
+	        	        
+
+    	</TableRow>
+
+	    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/main_buttonAddSms"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/ic_menu_compose"
+	            android:text="@string/title_activity_create_sms_template"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<!-- @android:drawable/ic_menu_compose 'resource is not public' error, copied to project from sdk -->
+	        
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/main_buttonAddUser"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableLeft="@drawable/ic_menu_invite"
+	            android:text="@string/title_activity_add_user"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	<!-- @android:drawable/ic_menu_invite 'resource is not public' error, copied to project from sdk -->
+
+    	</TableRow>
+	</TableLayout>
+
+    <ListView
+	    android:id="@+id/main_listViewAccounts"
+	    android:layout_below="@id/main_accountBalanceHeader"
+	    android:layout_above="@id/main_tableButtons"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	    
+	<!-- left empty populated by code -->
+        
+	</ListView>
+
+</RelativeLayout>

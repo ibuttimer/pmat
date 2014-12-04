@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <string-array name="help_topics">
+        <item android:id="@+id/help_topic_overview">Overview</item>
+        <item android:id="@+id/help_topic_create_bank">Add Bank</item>
+        <item android:id="@+id/help_topic_create_account">Add Account</item>
+        <item android:id="@+id/help_topic_add_transaction">Add Transaction</item>
+        <item android:id="@+id/help_topic_account_summary">Account Summary</item>
+        <item android:id="@+id/help_topic_create_sms_template">Add SMS Template</item>
+        <item android:id="@+id/help_topic_create_user">Add User</item>
+    </string-array>
+
+    <string-array name="help_items">
+        <item android:id="@+id/help_item_overview">Poor Man\&apos;s Account Tracker allows you to keep track of your financial situation.\n\n
+            Configure banks and accounts, then;\n
+            &#x2022; Manually enter transactions\n
+			&#x2022; Receive transaction updates via SMS from other users\n
+		</item>
+        <item android:id="@+id/help_item_create_bank">Select \&apos;Add Bank\&apos; from the options menu.\n\n
+            Configure the bank details as follows;\n
+            &#x2022; Enter the bank name\n
+            &#x2022; Enter phone numbers as needed.\n
+            \tNote: Select the Contacts button to the right of the number field to enter a number from phone contacts.\n
+            &#x2022; Configure SMS templates as needed.\n
+            \tNote: A Text Banking phone number must be entered before SMS templates may be created.\n
+		</item>
+        <item android:id="@+id/help_item_create_account">Select \&apos;Add Account\&apos; from the options menu.\n\n
+            Configure the account details as follows;\n
+            &#x2022; Enter the account name\n
+            &#x2022; Enter the account nickname (as used by Text Banking)\n
+            &#x2022; Select the account type\n
+            &#x2022; Select the account currency\n
+            &#x2022; Select the bank the account is held with\n
+            &#x2022; Select the date the account was opened\n
+            &#x2022; Enter the initial balance\n
+            &#x2022; Enter the credit limit for creditcard accounts, or overdraft limit for current accounts\n
+		</item>
+        <item android:id="@+id/help_item_add_transaction">A transaction may be entered in a number of ways;\n
+            &#x2022; Select \&apos;Add Transaction\&apos; from the options menu\n
+            &#x2022; Select \&apos;Add Transaction\&apos; from the Account Snapshot screen\n\n
+            Enter the transaction details as follows;\n
+            &#x2022; Enter the transaction type; Credit, Debit or Transfer\n
+            &#x2022; Enter the transaction amount\n
+            &#x2022; Select the account(s)\n
+            &#x2022; Select the payee/payer\n
+            &#x2022; Select the categories\n
+            \tNote: Categories are not applicable to Transfers.\n
+            &#x2022; Select the individual categories to enter category amount\n
+            \tNote: If the total amount entered for all categories is different to the transaction amount entered, use the Update Amount button to adjust the transaction amount.\n
+            &#x2022; Select the date and time\n
+            &#x2022; Enter an optional reference, e.g. cheque number\n
+            &#x2022; Enter an optional note\n
+		</item>
+        <item android:id="@+id/help_item_account_summary">From the Account Snapshot screen, select the account to view.\n\n
+            The following details will be displayed;\n
+            &#x2022; Current balance\n
+            &#x2022; Available balance, i.e balance available including any pending transactions\n
+            &#x2022; Transactions within the specified timeframe\n\n
+            Once the account summary is displayed;\n
+            &#x2022; Change the transactions timeframe to view more or less transactions\n
+            &#x2022; Change the display order by selecting the sort method\n
+            &#x2022; See more transaction details by selecting the transaction summary\n 
+            &#x2022; Select the transaction details to edit or delete the transaction\n 
+            &#x2022; Switch to another account by selecting it from the list at the top of the screen\n
+            &#x2022; Add a transaction by selecting \&apos;Add Account\&apos; from the options menu\n
+            &#x2022; Edit the bank by selecting \&apos;Edit Bank\&apos; from the options menu\n
+		</item>
+        <item android:id="@+id/help_item_create_sms_template">Select \&apos;Add SMS Template\&apos; from the options menu.\n\n
+            Configure the SMS Template as follows;\n
+            &#x2022; Enter the template name\n
+            &#x2022; Select the template type\n
+            &#x2022; Select the bank the template applies to\n
+            &#x2022; Add template fields by;\n
+            \t> Adding new field\n
+            \t> Selecting field type\n
+            \t> If a Text field, enter fixed text\n
+            &#x2022; Reorder fields by selecting up/down\n
+            &#x2022; Delete individual fields as required\n
+		</item>
+        <item android:id="@+id/help_item_create_user">Select \&apos;Add User\&apos; from the options menu.\n\n
+            Configure the user as follows;\n
+            &#x2022; Enter the user name\n
+            &#x2022; Enter the user phone number.\n
+            \tNote: Select the Contacts button to the right of the number field to enter a number from phone contacts.\n\n
+            Existing users may be updated by selecting them from the current user list and updating the details before saving again.
+		</item>
+	</string-array>
+</resources>

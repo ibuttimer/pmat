@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AmountEditText">
+        <attr name="valueMinorUnits" format="integer" />
+        <attr name="valueMinorUnitSeparator" format="string" />
+	</declare-styleable>
+    <declare-styleable name="CategoryAllocation">
+        <attr name="categoryText" format="string" localization="suggested" />
+        <attr name="valueAmount" format="string" />
+        <attr name="valueHint" format="string" />
+	</declare-styleable>
+    <declare-styleable name="AccountBalanceView">
+        <attr name="accountName" format="string" localization="suggested" />
+        <attr name="accountBalance" format="string" />
+	</declare-styleable>
+    <declare-styleable name="AddPhoneNumber">
+        <attr name="numberTitle" format="string" localization="suggested" />
+        <attr name="numberHint" format="string" />
+	</declare-styleable>
+    <declare-styleable name="AddUser">
+        <attr name="userName" format="string" localization="suggested" />
+        <attr name="userNumber" format="string" />
+	</declare-styleable>
+    
+</resources>

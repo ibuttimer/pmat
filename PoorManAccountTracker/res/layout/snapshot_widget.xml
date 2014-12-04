@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/ie.ibuttimer.pmat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/widgetLayoutAccounts"
+    android:background="@drawable/round_corner_box"
+    android:clickable="true"
+    android:minHeight="@dimen/widget_height"
+    android:minWidth="@dimen/widget_width"
+    android:orientation="horizontal" >
+
+	<TextView
+          android:id="@+id/widgetTextViewAccounts"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          android:text="@string/loading"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/sysBlack" />
+
+	<TextView
+          android:id="@+id/widgetTextViewBalance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          android:text="@string/loading"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textColor="@color/sysBlack" />
+
+</LinearLayout>

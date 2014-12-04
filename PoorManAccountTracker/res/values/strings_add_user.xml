@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_add_user">Add User</string>
+    <string name="title_activity_edit_user">Edit User</string>
+    <string name="add_user_name">Name:</string>
+    <string name="add_user_name_hint">Enter name</string>
+    <string name="add_user_number">Phone number:</string>
+    <string name="add_user_number_hint">Enter number or select from Contacts</string>
+    <string name="add_user_unable_to_commit">Unable to add new user</string>
+    <string name="add_user_existing">Current users:</string>
+    <string name="add_user_no_existing">No current users</string>
+    
+</resources>

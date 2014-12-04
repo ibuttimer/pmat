@@ -1,0 +1,104 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    
+    <string name="pref_header_developer">Developer</string>
+
+    <string name="pref_title_developer">Developer Mode</string>
+    <string name="pref_description_developer">Enable Developer Mode</string>
+
+    <string name="pref_title_create_accounts">Create accounts</string>
+    <string name="pref_description_create_accounts">Create test accounts in a new database.</string>
+
+    <string name="pref_title_use_fragments">Use fragments</string>
+    <string name="pref_description_use_fragments">Use fragments where possible.</string>
+    
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    
+    <string name="pref_title_sound">Enable sound</string>
+    <string name="pref_description_sound">Enable sound for application.</string>
+    
+    <string name="pref_title_animation">Enable animation</string>
+    <string name="pref_description_animation">Enable animation for application.</string>
+   
+    <string name="pref_title_transaction_range">Transactions default display range</string>
+    <string-array name="pref_transaction_range_titles">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 2 days</item>
+        <item>Last 3 days</item>
+        <item>Last 4 days</item>
+        <item>Last 5 days</item>
+        <item>Last week</item>
+        <item>Last 2 weeks</item>
+        <item>Last 3 weeks</item>
+        <item>Last month</item>
+        <item>Last 2 months</item>
+        <item>Last 3 months</item>
+        <item>Last 4 months</item>
+        <item>Last 5 months</item>
+        <item>Last 6 months</item>
+        <item>All transactions</item>
+    </string-array>
+    <string-array name="pref_transaction_range_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>14</item>
+        <item>21</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>1000</item>
+    </string-array>
+
+    <string name="pref_title_widget_accounts">Accounts to display in widget</string>
+    <string name="pref_widget_account_limit">No selection made, so all accounts will be displayed on the widget by default.</string>
+    <string name="pref_widget_account_limit_summary">No selection, show all accounts by default.</string>
+    <string-array name="pref_widget_accounts_default">
+<!--         this is intentionally left emplty as it filled from the code -->
+    </string-array>
+    <string-array name="pref_widget_accounts_titles">
+<!--         this is intentionally left emplty as it filled from the code -->
+        </string-array>
+    <string-array name="pref_widget_accounts_values">
+<!--         this is intentionally left emplty as it filled from the code -->
+    </string-array>
+    
+    
+    <string name="pref_title_transaction_sortby">Transactions default sort order</string>
+    <string-array name="pref_transaction_sortby_titles">
+<!--         \u2193 - down arrow, \u2191 - up arrow -->
+<!--         \u25BC - black down arrow, \u25B2 - black up triangle -->
+        <item>Date &#x25BC;</item>
+        <item>Date &#x25B2;</item>
+        <item>Amount &#x25BC;</item>
+        <item>Amount &#x25B2;</item>
+        <item>Payee &#x25BC;</item>
+        <item>Payee &#x25B2;</item>
+    </string-array>
+    <string-array name="pref_transaction_sortby_values">
+<!--        321 - decending, 123 - ascending 
+			44 = x44 = 'D' -> date, 41 = x41 = 'A' -> amount, 50 = x50 = 'P' -> payee -->
+        <item>44321</item>
+        <item>44123</item>
+        <item>41321</item>
+        <item>41123</item>
+        <item>50321</item>
+        <item>50123</item>
+    </string-array>
+
+</resources>

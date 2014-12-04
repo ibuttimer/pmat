@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/ie.ibuttimer.pmat"
+    android:id="@+id/createSmsTemplate_fieldLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<Spinner
+	    android:id="@+id/createSmsTemplate_spinnerType"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true" >
+	    
+		<ImageButton
+		    android:id="@+id/createSmsTemplateButtonAdd"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/createSmsTemplate_addNew"
+		    android:src="@android:drawable/ic_delete" />
+	
+		<ImageButton
+		    android:id="@+id/createSmsTemplate_imageButtonUp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/createSmsTemplate_moveUp"
+		    android:src="@android:drawable/arrow_up_float" />
+			
+		<ImageButton
+		    android:id="@+id/createSmsTemplate_imageButtonDown"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/createSmsTemplate_moveDown"
+		    android:src="@android:drawable/arrow_down_float" />
+			    	    
+	</LinearLayout>
+
+		
+	<EditText
+	    android:id="@+id/createSmsTemplate_editTextText"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="false"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/createSmsTemplate_spinnerType"
+	    android:ems="10"
+	    android:hint="@string/createSmsTemplate_fixedTextHint"
+	    android:inputType="text" >
+
+	</EditText>
+
+</RelativeLayout>

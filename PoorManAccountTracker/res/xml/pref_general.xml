@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_sound"
+        android:summary="@string/pref_description_sound"
+        android:title="@string/pref_title_sound" />
+   
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_animation"
+        android:summary="@string/pref_description_animation"
+        android:title="@string/pref_title_animation" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_use_fragments"
+        android:summary="@string/pref_description_use_fragments"
+        android:title="@string/pref_title_use_fragments" />
+
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="7"
+        android:entries="@array/pref_transaction_range_titles"
+        android:entryValues="@array/pref_transaction_range_values"
+        android:key="pref_transaction_range"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_transaction_range" />
+    
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="44321"
+        android:entries="@array/pref_transaction_sortby_titles"
+        android:entryValues="@array/pref_transaction_sortby_values"
+        android:key="pref_transaction_sortby"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_transaction_sortby" />
+    
+    <ie.ibuttimer.widget.AccountListPreference
+        android:defaultValue="@array/pref_widget_accounts_default"
+        android:entries="@array/pref_widget_accounts_titles"
+        android:entryValues="@array/pref_widget_accounts_values"
+        android:key="pref_widget_accounts" 
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_widget_accounts" />
+    
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_AddTransaction" 
+        android:title="@string/title_activity_add_transaction">
+    </item>
+    <item android:id="@+id/action_EditBank" 
+        android:title="@string/title_activity_edit_bank">
+    </item>
+    <item android:id="@+id/action_About" 
+        android:orderInCategory="100"
+        android:title="@string/title_activity_about">
+    </item>
+    
+</menu>

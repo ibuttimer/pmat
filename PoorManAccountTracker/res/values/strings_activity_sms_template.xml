@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smstemplate_template">Template text:</string>
+    <string name="smstemplate_template_hint">Enter message template text</string>
+    
+<!--     String array for sms template field types. Note: must match SmsMessageFactory.SMS_TEMPLATE_FIELD_TEXT etc. -->
+    <string-array name="smstemplate_field_types">
+        <item >Select field type</item>
+        <item >Text</item>
+        <item >Amount</item>
+        <item >Account</item>
+    </string-array>
+<!--     String array for sms template field type values. Note: must match SmsMessageFactory.SMS_TEMPLATE_FIELD_TEXT etc. -->
+    <integer-array name="smstemplate_field_type_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </integer-array>
+    
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selectcontact_no_contacts">No contacts currently available, select \'Add New\' to create contacts.</string>
+    
+</resources>

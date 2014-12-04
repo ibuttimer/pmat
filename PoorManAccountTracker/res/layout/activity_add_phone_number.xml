@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/ie.ibuttimer.pmat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@drawable/layout_background"
+    custom:numberTitle="@android:string/untitled"
+    custom:numberHint="@android:string/untitled" >
+    
+    <TextView
+        android:id="@+id/addPhoneNumber_textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@android:string/untitled"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/addPhoneNumber_imageButtonContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/add_bank_contacts_hint"
+        android:src="@drawable/ic_menu_cc_am" />
+
+	<!-- @android:drawable/ic_menu_cc_am 'resource is not public' error, copied to project from sdk -->
+    
+    <EditText
+        android:id="@+id/addPhoneNumber_editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addPhoneNumber_textViewTitle"
+        android:layout_toLeftOf="@+id/addPhoneNumber_imageButtonContacts"
+        android:minEms="10"
+        android:inputType="phone" >
+    </EditText>
+
+</RelativeLayout>

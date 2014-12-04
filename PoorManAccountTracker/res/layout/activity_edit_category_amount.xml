@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditCategoryAmountActivity" >
+
+    <TextView
+        android:id="@+id/editCategoryAmount_textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewDefaultText" />
+
+    <EditText
+        android:id="@+id/editCategoryAmount_editTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCategoryAmount_textViewName"
+        android:layout_below="@+id/editCategoryAmount_textViewName"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCategoryAmount_editTextAmount"
+        android:layout_below="@+id/editCategoryAmount_editTextAmount" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/editCategoryAmount_buttonDelete"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/button_delete" />
+	
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/editCategoryAmount_buttonAmt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@android:string/ok" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	        
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/editCategoryAmount_buttonCancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@android:string/cancel" />
+	
+	        <ie.ibuttimer.widget.AppButton
+	            android:id="@+id/editCategoryAmount_buttonSave"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@android:string/ok" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

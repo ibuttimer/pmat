@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_name">Name:</string>
+    <string name="account_nickname">Nickname:</string>
+    <string name="account_current_bal">Current Balance:</string>
+    <string name="account_available_bal">Available Balance:</string>
+    <string name="account_transactions_from">Transactions from:</string>
+    <string name="account_sort_by">Sort by</string>
+    <string name="account_no_transactions">No transactions to display</string>
+    <string name="account_transfer_from">Transfer from</string>
+    <string name="account_transfer_to">Transfer to</string>
+    <string name="account_transaction_categories">Categories:</string>
+    <string name="account_transactionEditDelete">Edit or delete transaction?</string>
+    <string name="account_transactionEdit">Edit</string>
+    <string name="account_transactionDelete">Delete</string>
+    
+    
+</resources>

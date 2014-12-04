@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_add_account">Add Account</string>
+    <string name="addaccount_account_name">Account Name:</string>
+    <string name="addaccount_account_nickname">Account Nickname:</string>
+    <string name="addaccount_account_type">Account Type:</string>
+    <string name="addaccount_account_currency">Account Currency:</string>
+    <string name="addaccount_account_bank">Bank:</string>
+    <string name="addaccount_set_date">Account open date</string>
+    <string name="addaccount_date">Open date</string>
+    <string name="addaccount_open_date_not_set">Open date not set</string>
+    <string name="addaccount_account_initial_bal">Initial Balance:</string>
+    <string name="addaccount_account_credit_limit">Credit Limit:</string>
+    <string name="addaccount_account_overdraft_limit">Overdraft Limit:</string>
+    <string name="addaccount_account_number">Account Number:</string>
+    <string name="addaccount_account_name_hint">Enter account name</string>
+    <string name="addaccount_account_nickname_hint">Enter account nickname</string>
+    <string name="addaccount_account_initial_bal_hint">Enter initial balance</string>
+    <string name="addaccount_account_credit_limit_hint">Enter credit limit</string>
+    <string name="addaccount_account_overdraft_limit_hint">Enter overdraft limit</string>
+    <string name="addaccount_account_number_hint">Enter account number</string>
+    
+</resources>

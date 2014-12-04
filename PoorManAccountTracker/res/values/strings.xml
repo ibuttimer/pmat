@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Poor Man\'s Account Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="textViewDefaultText">TextView</string>
+    <string name="loading">Loading &#8230;</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_save_and_new">OK &amp; New</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_delete">Delete</string>
+    <string name="not_available">N/A</string>
+    <string name="account_snapshot">Account Snapshot</string>
+    <string name="account_snapshot_none">There are no accounts setup.\nSelect \'Add Account\' below to setup an account or check out \'Help\' for more information.</string>
+
+    <!-- Database setup steps -->
+    <string name="create_database">Creating database</string>
+    <string name="create_db_drop_tables">Erasing old tables</string>
+    <string name="create_db_add_tables">Adding new tables</string>
+    <string name="create_db_add_users">Adding users</string>
+    <string name="create_db_add_account_types">Adding account types</string>
+    <string name="create_db_add_currencies">Adding currencies</string>
+    <string name="create_db_add_banks">Adding banks</string>
+    <string name="create_db_add_sms_types">Adding SMS types</string>
+    <string name="create_db_add_transfers">Adding transfer types</string>
+    <string name="create_db_add_categories">Adding transfer types</string>
+    <string name="create_db_add_accounts">Adding accounts</string>
+
+    <!-- Transaction statuses names and marks. See Transaction class -->
+    <string name="transstatus_invalid">Invalid</string>
+    <string name="transstatus_initiated">Initiated</string>
+    <string name="transstatus_inprogress">In Progress</string>
+    <string name="transstatus_complete">Complete</string>
+    <string name="transstatus_cancelled">Cancelled</string>
+    <string name="transstatus_postponed">Postponed</string>
+    <string name="transstatus_mark_invalid">-</string>
+    <string name="transstatus_mark_initiated">I</string>
+    <string name="transstatus_mark_inprogress">W</string>
+    <string name="transstatus_mark_complete">C</string>
+    <string name="transstatus_mark_cancelled">X</string>
+    <string name="transstatus_mark_postponed">P</string>
+
+    <string name="title_activity_select_category">Select Category</string>
+    <string name="title_activity_select_transfer">Select Transfer</string>
+    <string name="title_activity_edit_category_amount">Edit Category Amount</string>
+    <string name="title_activity_select_contact">Select Contact</string>
+    <string name="title_activity_sms_template">Sms Template</string>
+    <string name="title_activity_account">Account</string>
+    <string name="title_activity_about">About</string>
+    <string name="progress_loading_snapshot">Loading accounts\' snapshot &#8230;</string>
+    <string name="progress_initing_database">Initialising database &#8230;</string>
+    <string name="progress_upgrading_database">Upgrading database &#8230;</string>
+    <string name="progress_loading_accdetails">Loading account details &#8230;</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="title_activity_preference">Preferences</string>
+    <string name="title_help_list">Help</string>
+    <string name="title_help_detail">Help Detail</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+
+</resources>
